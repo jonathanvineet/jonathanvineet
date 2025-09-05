@@ -1,30 +1,9 @@
 <div align="center">
-
-```
-█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-█ ██╗   ██╗██████╗  █████╗ ████████╗ ██████╗ ██████╗ ███╗   ███╗ █
-█ ██║   ██║██╔══██╗██╔══██╗╚══██╔══╝██╔════╝██╔═══██╗████╗ ████║ █
-█ ██║   ██║██████╔╝███████║   ██║   ██║     ██║   ██║██╔████╔██║ █
-█ ╚██╗ ██╔╝██╔══██╗██╔══██║   ██║   ██║     ██║   ██║██║╚██╔╝██║ █
-█  ╚████╔╝ ██████╔╝██║  ██║   ██║   ╚██████╗╚██████╔╝██║ ╚═╝ ██║ █
-█   ╚═══╝  ╚═════╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝     ╚═╝ █
-█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
-
-[*] Initializing Batcomputer v9.0.5.33...
-[*] Loading threat detection algorithms...
-[*] Establishing secure connection to Batcave mainframe...
-[*] Scanning Gotham City network traffic... 
-[*] Bypassing GCPD security protocols...
-[*] Loading custom vulnerability database...
-[*] Initializing facial recognition system...
-[✓] All systems operational.
-[✓] Batcomputer ready. Welcome back, Master Bruce.
-```
-
+  <img src="https://thebatmanuniverse.net/wp-content/uploads/2019/02/tbu-why-i-write.jpg" width="100%">
 </div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=35&duration=3000&pause=1000&color=FFFF00&center=true&vCenter=true&width=600&lines=JONATHAN+VINEET;THE+DARK+KNIGHT+OF+CODE;DEFENDER+OF+CLEAN+ARCHITECTURE;GOTHAM'S+DIGITAL+PROTECTOR" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Gotham&size=35&duration=3000&pause=1000&color=FFFF00&center=true&vCenter=true&width=600&lines=JONATHAN+VINEET;THE+DARK+KNIGHT+OF+CODE;DEFENDER+OF+CLEAN+ARCHITECTURE;GOTHAM'S+DIGITAL+PROTECTOR" />
 </h1>
 
 <div align="center">
@@ -36,7 +15,7 @@
 </div>
 
 <div align="center">
-  <img src="https://i.imgur.com/NnIwSIL.gif" width="100%">
+  <img src="https://raw.githubusercontent.com/gist/ManulMax/2d20af60d709805c55fd784ca7cba4b9/raw/bcfeac7604f674ace63623106eb8bb8471d844a6/github.gif" width="100%">
 </div>
 
 <h2 align="center">
@@ -61,31 +40,7 @@ __|_____|____________________________________________________|_____|__
 ```
 
 <div align="center">
-
-```
-┌──[bat@computer]─[~]
-└──╼ # cat /etc/bat_motd
-
-╔════════════════════════════════════════════════════════════════╗
-║                                                                ║
-║  ██████   █████  ████████  ██████  ██████  ██████  ███████     ║
-║  ██   ██ ██   ██    ██    ██      ██    ██ ██   ██ ██          ║
-║  ██████  ███████    ██    ██      ██    ██ ██   ██ █████       ║
-║  ██   ██ ██   ██    ██    ██      ██    ██ ██   ██ ██          ║
-║  ██████  ██   ██    ██     ██████  ██████  ██████  ███████     ║
-║                                                                ║
-╚════════════════════════════════════════════════════════════════╝
-
-┌──[bat@computer]─[~]
-└──╼ # ./run_security_scan.sh --target=gotham --mode=stealth
-
-[+] Running system reconnaissance...
-[+] Encrypting connection through Batcave VPN...
-[+] Accessing satellite feeds...
-[+] Deploying shadow network...
-[+] Security scan complete. Gotham is protected.
-```
-
+  <a href="#"><img src="https://media1.giphy.com/media/TNf5oSRelTeI8/giphy.gif" width="100%"></a>
 </div>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="25" height="25" /> BATCOMPUTER ARSENAL
@@ -112,27 +67,7 @@ __|_____|____________________________________________________|_____|__
 </table>
 
 <div align="center">
-
-```
---------------------------------------------------------------------------------------------------------
- _______  _______  ______    _______    ___   __    _  _______  _______  ___      ___      ___   _______  _______  __    _  _______ 
-|       ||   _   ||    _ |  |       |  |   | |  |  | ||       ||       ||   |    |   |    |   | |       ||       ||  |  | ||       |
-|       ||  |_|  ||   | ||  |    ___|  |   | |   |_| ||_     _||    ___||   |    |   |    |   | |    ___||    ___||   |_| ||_     _|
-|       ||       ||   |_||_ |   |___   |   | |       |  |   |  |   |___ |   |    |   |    |   | |   | __ |   |___ |       |  |   |  
-|      _||       ||    __  ||    ___|  |   | |  _    |  |   |  |    ___||   |___ |   |___ |   | |   ||  ||    ___||  _    |  |   |  
-|     |_ |   _   ||   |  | ||   |___   |   | | | |   |  |   |  |   |___ |       ||       ||   | |   |_| ||   |___ | | |   |  |   |  
-|_______||__| |__||___|  |_||_______|  |___| |_|  |__|  |___|  |_______||_______||_______||___| |_______||_______||_|  |__|  |___|  
----------------------------------------------------------------------------------------------------------
-
-[*] Accessing Gotham City criminal database...
-[*] Decrypting secured files...
-[*] Cross-referencing recent criminal activities...
-[*] Mapping known villain locations...
-[*] Building behavioral patterns...
-[*] Creating threat assessment profiles...
-[*] Analysis complete. Data ready for review.
-```
-
+  <img src="https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake-dark.svg" width="100%">
 </div>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="25" height="25" /> CRIMINAL DATABASE TRACKING
@@ -144,37 +79,7 @@ __|_____|____________________________________________________|_____|__
 
 <!-- Bat Signal -->
 <div align="center">
-
-```
-┌──[bat@computer]─[~]
-└──╼ # ./activate_bat_signal.sh --emergency
-
-█████████████████████████████████████████████████████████████████████████████
-█████████████████████████████████████████████████████████████████████████████
-███████████████████████████████████████▓██████████████████████████████████████
-████████████████████████████████████▒▒▒░▓█████████████████████████████████████
-██████████████████████████████████▒▒▒▒▒▒▒▓████████████████████████████████████
-████████████████████████████████▒▒▒▒▒▒▒▒▒░████████████████████████████████████
-██████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒███████████████████████████████████
-█████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▓███████████████████████████████████
-████████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒████████████████████████████████████
-███████████████████████████▒▒▒▒▒▒▒▒▒▒▒▒▒█████████████████████████████████████
-██████████████████████████▓▒▒▒▒▒▒▒▒▒▒▒▓██████████████████████████████████████
-██████████████████████████▓▒▒▒▒▒▒▒▒▒▒███████████████████████████████████████
-██████████████████████████▓▒▒▒▒▒▒▒▒▒░████████████████████████████████████████
-███████████████████████████▓▒▒▒▒▒▒▒▒█████████████████████████████████████████
-███████████████████████████▓▒▒▒▒▒▒▒▒█████████████████████████████████████████
-███████████████████████████▓▒▒▒▒▒▒▒▒█████████████████████████████████████████
-████████████████████████████▒▒▒▒▒▒▓█████████████████████████████████████████
-█████████████████████████████▒▒▒▒▓██████████████████████████████████████████
-██████████████████████████████▓░▓███████████████████████████████████████████
-████████████████████████████████████████████████████████████████████████████
-
-[✓] BAT-SIGNAL ACTIVATED
-[✓] BEACON DEPLOYED OVER GOTHAM CITY
-[✓] AWAITING RESPONSE...
-```
-
+  <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%">
 </div>
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Telephone%20Receiver.png" width="25" height="25" /> ACTIVATE THE BAT SIGNAL
@@ -187,51 +92,9 @@ __|_____|____________________________________________________|_____|__
 </div>
 
 <div align="center">
-
-```
-┌──[bat@computer]─[~]
-└──╼ # sudo ./justice_protocol.sh --execute
-
-[*] Initializing justice protocol...
-[*] Loading crimefighting algorithms...
-[*] Deploying autonomous defense systems...
-[*] Compiling forensic analysis...
-[*] Engaging stealth mode...
-[*] All systems go.
-
-                        .,:ccllllllllllllllc:,.                        
-                   .:loxOOOOOOOOOOOOOOOOOOOOOOOOOxoc,.                
-                .cdOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOkl'             
-             .:dOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOx:.          
-           .:xOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOd:.       
-         .:xOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOl.     
-        'oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo'   
-       .oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOk,  
-      .oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOx. 
-      :kOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOc 
-     .xOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOx'
-     ,kOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO:
-     ;0OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOl
-     ;0OOOOOOOOOOOOOOOOOOOOOOOOOOO0KXNNNNXKOkOOOOOOOOOOOOOOOOOOOOOOOOOl
-     ;0OOOOOOOOOOOOOOOOOOOOOOO0XNWWMMMMMMMMWNKOkOOOOOOOOOOOOOOOOOOOOOOl
-     ,OOOOOOOOOOOOOOOOOOOOOO0NMMMMMMMMMMMMMMMMWKOkOOOOOOOOOOOOOOOOOOOO:
-     .dOOOOOOOOOOOOOOOOOOOOKWMMMMMMMMMMMMMMMMMMMN0kOOOOOOOOOOOOOOOOOOc 
-      cOOOOOOOOOOOOOOOOOOOXWMMMMMMMMMMMMMMMMMMMMMWXOOOOOOOOOOOOOOOOOk, 
-      .oOOOOOOOOOOOOOOOO0XMMMMMMMMMMMMMMMMMMMMMMMMWXOkOOOOOOOOOOOOOO:  
-       .dOOOOOOOOOOOOOO0WMMMMMMMMMMMMMMMMMMMMMMMMMMWNKOOOOOOOOOOOO0c   
-        .oOOOOOOOOOOOOKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN0OOOOOOOOOO0:    
-         .cOOOOOOOOOO0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXOOOOOOOOOO;     
-           ,xOOOOOOO0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXOOOOOOO0o.     
-            .lOOOOOKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKOOOOOOd.      
-              ,dOO0WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNOOOO0l.       
-                ;kXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXOOk:.        
-                  ,xXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWXkc,.           
-                    .;dOKXNWWMMMMMMMMMMMMMMMMMWWNX0ko:,.               
-                        .';cloddxxkkkkkkxxdollc;,..                    
-
-> I AM VENGEANCE
-> I AM THE NIGHT  
-> I AM BATMAN
-```
-
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%">
 </div>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=FFFF00&height=100&section=footer&text=I%20AM%20VENGEANCE&fontSize=24&fontColor=000000&animation=twinkling">
+</p>
