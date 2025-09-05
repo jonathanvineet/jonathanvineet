@@ -15,72 +15,84 @@
 </div>
 
 <div align="center">
-  <!-- Inline SVG: Batcomputer boot animation -->
+  <!-- Scriptless SVG (GitHub-safe) boot sequence using SMIL + staggered opacity -->
   <svg width="100%" viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
     <style>
-      @keyframes flicker {0%,18%,22%,25%,53%,57%,100%{opacity:1;}20%,24%,55%{opacity:0.2;}23%,27%{opacity:0.6;}}
-      @keyframes caret {0%,49%{opacity:1;}50%,100%{opacity:0;}}
       .screen{fill:#000;stroke:#222;stroke-width:2;}
-      .text{font:14px 'Courier New',monospace;fill:#d6d6d6;}
+      .t{font:14px 'Courier New',monospace;fill:#d6d6d6;opacity:0;}
       .sys{fill:#FFFF00;}
       .ok{fill:#00ff55;}
       .warn{fill:#ffaa00;}
-      .err{fill:#ff0033;}
-      .blink{animation:caret 1s steps(1) infinite;}
-      .flicker{animation:flicker 4s linear 1;}
-      .hidden{opacity:0;}
-      /* Type-on effect via stroke-dasharray animation for each line */
-      .l{stroke:none;opacity:0;}
+      .cursor{fill:#FFFF00;animation:blink 1s steps(1) infinite;}
+      @keyframes blink{50%{opacity:0;}}
+      /* Flicker overlay */
+      .flicker{animation:fkr 2.8s linear 1;}
+      @keyframes fkr{0%,15%,22%,40%,55%,100%{opacity:1;}18%,24%,53%{opacity:0.2;}28%{opacity:0.6;}}
+      /* Progress bar fill (mask width growth) */
+      #barMask rect{animation:grow 2.4s linear forwards;animation-delay:3.9s;}
+      @keyframes grow{from{width:0;}to{width:200px;}}
+      /* Bat scale in */
+      #bat{transform-origin:400px 150px;animation:pop 0.8s ease-out forwards;animation-delay:6.6s;opacity:0;}
+      @keyframes pop{0%{transform:scale(.1);opacity:0;}70%{opacity:1;}100%{transform:scale(1);opacity:1;}}
     </style>
     <rect class="screen" x="5" y="5" width="790" height="290" rx="6"/>
-    <!-- Mask rectangle to simulate reveal -->
-    <g class="flicker">
-      <g id="lines" transform="translate(25,40)">
-        <text id="l1" class="text sys">INITIALIZING BATCOMPUTER v9.4...</text>
-        <text id="l2" class="text" y="22">[KERNEL] Loading secure kernel modules ........ <tspan class="ok">OK</tspan></text>
-        <text id="l3" class="text" y="44">[DRIVERS] Calibrating sensor array ............ <tspan class="ok">OK</tspan></text>
-        <text id="l4" class="text" y="66">[NETWORK] Establishing encrypted uplinks ...... <tspan class="ok">OK</tspan></text>
-        <text id="l5" class="text" y="88">[AI CORE] Spinning up predictive engine ....... <tspan class="ok">OK</tspan></text>
-        <text id="l6" class="text" y="110">[FORENSICS] Mounting evidence volumes ......... <tspan class="ok">OK</tspan></text>
-        <text id="l7" class="text" y="132">[FRAMEWORK] Initializing React runtime ........ <tspan class="ok">OK</tspan></text>
-        <text id="l8" class="text" y="154">[FRAMEWORK] Initializing Node services ........ <tspan class="ok">OK</tspan></text>
-        <text id="l9" class="text" y="176">[CLOUD] Deploying ephemeral Gotham region ..... <tspan class="ok">OK</tspan></text>
-        <text id="l10" class="text" y="198">[SECURITY] Validating cryptographic seals ..... <tspan class="ok">OK</tspan></text>
-        <text id="l11" class="text warn" y="220">[ALERT] Elevated crime pattern detected in sector 12</text>
-        <text id="l12" class="text" y="242">Progress: [<tspan id="bar" class="sys">--------------------</tspan>] 0%</text>
-        <text id="l13" class="text sys" y="264">BATCOMPUTER INITIALIZED — WELCOME, JONATHAN <tspan class="blink">█</tspan></text>
+    <g class="flicker" transform="translate(25,40)">
+      <text class="t sys" x="0" y="0">
+        INITIALIZING BATCOMPUTER v9.4...
+        <animate attributeName="opacity" begin="0.3s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="22">[KERNEL] Loading secure kernel modules ........ <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="0.6s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="44">[DRIVERS] Calibrating sensor array ............ <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="0.9s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="66">[NETWORK] Establishing encrypted uplinks ...... <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="1.2s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="88">[AI CORE] Spinning up predictive engine ....... <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="1.5s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="110">[FORENSICS] Mounting evidence volumes ......... <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="1.8s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="132">[FRAMEWORK] Initializing React runtime ........ <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="2.1s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="154">[FRAMEWORK] Initializing Node services ........ <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="2.4s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="176">[CLOUD] Deploying ephemeral Gotham region ..... <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="2.7s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t" x="0" y="198">[SECURITY] Validating cryptographic seals ..... <tspan class="ok">OK</tspan>
+        <animate attributeName="opacity" begin="3.0s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <text class="t warn" x="0" y="220">[ALERT] Elevated crime pattern detected in sector 12
+        <animate attributeName="opacity" begin="3.3s" dur="0.1s" to="1" fill="freeze" />
+      </text>
+      <!-- Progress bar -->
+      <g transform="translate(0,236)" class="t" opacity="0">
+        <animate attributeName="opacity" begin="3.6s" dur="0.1s" to="1" fill="freeze" />
+        <text class="t" x="0" y="6">Progress:</text>
+        <rect x="80" y="-8" width="200" height="14" fill="#111" stroke="#333" />
+        <g id="barMask"><rect x="80" y="-8" width="0" height="14" fill="#FFFF00" /></g>
+        <text x="290" y="6" class="t sys" opacity="0">100%
+          <animate attributeName="opacity" begin="6.3s" dur="0.2s" to="1" fill="freeze" />
+        </text>
       </g>
-      <!-- Batman symbol appears after init -->
-      <g id="bat" transform="translate(400,150) scale(0)" fill="#FFFF00">
-        <path id="batPath" d="M0-35c8 0 14-6 17-14 3 8 9 14 17 14 14 0 33-10 46-8-5 5-9 11-9 18 9-2 18-6 26-11-2 13-4 26-11 37-7 11-18 20-32 20-6 0-12-2-17-5-5 3-11 5-17 5-14 0-25-9-32-20-7-11-9-24-11-37 8 5 17 9 26 11 0-7-4-13-9-18 13-2 32 8 46 8z"/>
+      <!-- Final line -->
+      <text class="t sys" x="0" y="264">BATCOMPUTER INITIALIZED — WELCOME, JONATHAN <tspan class="cursor">█</tspan>
+        <animate attributeName="opacity" begin="6.4s" dur="0.2s" to="1" fill="freeze" />
+      </text>
+    </g>
+    <!-- Bat symbol (original shape) appears after progress completes -->
+    <g id="bat" fill="#FFFF00" opacity="0">
+      <animate attributeName="opacity" begin="6.6s" dur="0.6s" to="1" fill="freeze" />
+      <g transform="translate(400,150)">
+        <path d="M0-35c8 0 14-6 17-14 3 8 9 14 17 14 14 0 33-10 46-8-5 5-9 11-9 18 9-2 18-6 26-11-2 13-4 26-11 37-7 11-18 20-32 20-6 0-12-2-17-5-5 3-11 5-17 5-14 0-25-9-32-20-7-11-9-24-11-37 8 5 17 9 26 11 0-7-4-13-9-18 13-2 32 8 46 8z"/>
       </g>
     </g>
-    <script type="application/ecmascript"><![CDATA[
-      const order=['l1','l2','l3','l4','l5','l6','l7','l8','l9','l10','l11','l12','l13'];
-      let delay=400; // ms between lines
-      order.forEach((id,i)=>{
-        const el=document.getElementById(id);
-        el.setAttribute('opacity','0');
-        setTimeout(()=>{el.setAttribute('opacity','1');}, i*delay+500);
-      });
-      // progress bar animation
-      const bar=document.getElementById('bar');
-      let filled=0;const total=20;let pct=0;
-      function tick(){
-        if(filled<=total){
-          bar.textContent='#'.repeat(filled)+'-'.repeat(total-filled);
-          const l12=document.getElementById('l12');
-          pct=Math.round((filled/total)*100);
-          l12.textContent=`Progress: [${bar.textContent}] ${pct}%`;
-          filled++;setTimeout(tick,120);
-        } else {
-          // show bat
-          const bat=document.getElementById('bat');
-          bat.setAttribute('transform','translate(400,150) scale(1)');
-        }
-      }
-      setTimeout(tick, delay*11);
-    ]]></script>
   </svg>
 </div>
 
