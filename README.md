@@ -14,13 +14,41 @@
   
 </div>
 
+<!-- BatTech Stack Badges -->
 <div align="center">
-  <!-- Minimal inline bat emblem (original path styling) -->
-  <svg width="220" height="120" viewBox="-120 -60 240 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bat emblem">
-    <title>Bat Emblem</title>
-    <rect x="-120" y="-60" width="240" height="120" fill="none" />
-    <path fill="#FFFF00" d="M0-35c8 0 14-6 17-14 3 8 9 14 17 14 14 0 33-10 46-8-5 5-9 11-9 18 9-2 18-6 26-11-2 13-4 26-11 37-7 11-18 20-32 20-6 0-12-2-17-5-5 3-11 5-17 5-14 0-25-9-32-20-7-11-9-24-11-37 8 5 17 9 26 11 0-7-4-13-9-18 13-2 32 8 46 8z"/>
-  </svg>
+  <table>
+    <tr>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/React-BAT%20MODULE-000000?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=111111" />
+      </td>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/TypeScript-BAT%20SCRIPT-000000?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=111111" />
+      </td>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/Node.js-GOTHAM%20CORE-000000?style=for-the-badge&logo=node.js&logoColor=5FA04E&labelColor=111111" />
+      </td>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/Express-API%20GRID-000000?style=for-the-badge&logo=express&logoColor=FFFFFF&labelColor=111111" />
+      </td>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/Docker-CONTAINER%20VAULT-000000?style=for-the-badge&logo=docker&logoColor=2496ED&labelColor=111111" />
+      </td>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/AWS-CLOUD%20RELAY-000000?style=for-the-badge&logo=amazonaws&logoColor=FF9900&labelColor=111111" />
+      </td>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/PostgreSQL-DATA%20ARCHIVE-000000?style=for-the-badge&logo=postgresql&logoColor=4169E1&labelColor=111111" />
+      </td>
+      <td align="center" style="border:none;">
+        <img src="https://img.shields.io/badge/Git-VERSION%20UTILITY-000000?style=for-the-badge&logo=git&logoColor=F05032&labelColor=111111" />
+      </td>
+    </tr>
+  </table>
+  <br/>
+</div>
+
+<div align="center">
+  <img src="https://i.pinimg.com/originals/04/b5/71/04b5711d4299553b6a5cf9ce0eb25888.gif" alt="Bat emblem" width="260" />
 </div>
 
 <h2 align="center">
