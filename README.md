@@ -34,12 +34,12 @@
 __|_____|____________________________________________________|_____|
 ```
 
-<!-- Centered Batman logo image before Bat Arsenal (provided PNG) -->
+<!-- Centered Batman logo image before Bat Arsenal with yellow glow (preserves original black) -->
 <div align="center">
-  <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="420" />
+  <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="420" style="filter: drop-shadow(0 0 4px #FFD400) drop-shadow(0 0 12px #FFD400) drop-shadow(0 0 24px #FFC800);" />
 </div>
 
-<h2 align="center">Bat Arsenal <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="60" style="vertical-align:middle;"/></h2>
+<h2 align="center">Bat Arsenal <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="60" style="vertical-align:middle; filter: drop-shadow(0 0 2px #FFD400) drop-shadow(0 0 6px #FFD400) drop-shadow(0 0 10px #FFC800);"/></h2>
 <div align="center">
   
   <!-- Core Languages -->
@@ -110,9 +110,7 @@ __|_____|____________________________________________________|_____|
 </div>
 
 
-<div align="center">
-  <img src="https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake-dark.svg" width="100%">
-</div>
+
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Bar%20Chart.png" width="25" height="25" /> CRIMINAL DATABASE TRACKING
 
