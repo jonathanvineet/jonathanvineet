@@ -15,11 +15,12 @@
 </div>
 
 <div align="center">
-  <!-- Reliable GIF fallback: pre-rendered boot animation -->
-  <img src="https://raw.githubusercontent.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/master/assets/code.gif" alt="Batcomputer boot" width="100%" />
-  <br/>
-  <!-- Static bat emblem after 'boot' -->
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Batman_symbol.svg/320px-Batman_symbol.svg.png" alt="Bat emblem" width="140" />
+  <!-- Minimal inline bat emblem (original path styling) -->
+  <svg width="220" height="120" viewBox="-120 -60 240 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Bat emblem">
+    <title>Bat Emblem</title>
+    <rect x="-120" y="-60" width="240" height="120" fill="none" />
+    <path fill="#FFFF00" d="M0-35c8 0 14-6 17-14 3 8 9 14 17 14 14 0 33-10 46-8-5 5-9 11-9 18 9-2 18-6 26-11-2 13-4 26-11 37-7 11-18 20-32 20-6 0-12-2-17-5-5 3-11 5-17 5-14 0-25-9-32-20-7-11-9-24-11-37 8 5 17 9 26 11 0-7-4-13-9-18 13-2 32 8 46 8z"/>
+  </svg>
 </div>
 
 <h2 align="center">
