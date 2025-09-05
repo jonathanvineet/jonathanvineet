@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Gotham&size=35&duration=3000&pause=1000&color=FFFF00&center=true&vCenter=true&width=600&lines=JONATHAN+VINEET;THE+DARK+KNIGHT+OF+CODE;DEFENDER+OF+CLEAN+ARCHITECTURE;GOTHAM'S+DIGITAL+PROTECTOR" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Gotham&size=35&duration=3000&pause=1000&color=FFFF00&center=true&vCenter=true&width=700&lines=JONATHAN+VINEET;THE+DARK+KNIGHT+OF+CODE;DEFENDER+OF+CLEAN+ARCHITECTURE;GOTHAM'S+DIGITAL+PROTECTOR" />
 </h1>
 
 <div align="center">
@@ -15,7 +15,7 @@
 </div>
 
 <h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" width="25" height="25" /> 
+  <img src="https://github.com/jonathanvineet/jonathanvineet/blob/main/assets/bat-logo-glow-mask.png" width="25" height="25" /> 
   BATCOMPUTER SYSTEMS ONLINE
 </h2>
 
@@ -23,6 +23,8 @@
 <p align="center">
   <img src="assets/line-neon-bw.gif" alt="Gotham Skyline Line (Grayscale)">
 </p>
+
+<div align="center">
 
 ```
         __                                                   __
@@ -34,10 +36,10 @@
 __|_____|____________________________________________________|_____|
 ```
 
-<!-- Centered Batman logo image before Bat Arsenal (baked glow) -->
-<div align="center">
-  <img src="assets/bat-logo-glow-mask.png" alt="Bat Logo" width="420" />
 </div>
+
+<!-- Centered Batman logo image before Bat Arsenal (baked glow) -->
+
 
 <div align="center">
   <h2 style="display: inline-block; vertical-align: middle; margin: 0;">Bat Arsenal</h2>
@@ -50,6 +52,7 @@ __|_____|____________________________________________________|_____|
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
   <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
   <img src="https://img.shields.io/badge/Solidity-363636?style=for-the-badge&logo=solidity&logoColor=white" />
@@ -75,6 +78,8 @@ __|_____|____________________________________________________|_____|
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=000" />
   
   <!-- ⛓️ Blockchain & Web3 -->
   <h3>⛓️ Blockchain & Web3</h3>
@@ -142,5 +147,5 @@ __|_____|____________________________________________________|_____|
 </div>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=FFFF00&height=100&section=footer&text=I%20AM%20VENGEANCE&fontSize=24&fontColor=000000&animation=twinkling">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=100&section=footer&text=I%20AM%20VENGEANCE&fontSize=24&fontColor=FFFF00&animation=twinkling">
 </p>
