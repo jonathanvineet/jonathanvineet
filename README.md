@@ -78,26 +78,55 @@ __|_____|____________________________________________________|_____|__
 
 ## <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Laptop.png" width="25" height="25" /> BATCOMPUTER ARSENAL
 
-<table>
-<tr>
-<td width="50%">
-<h3 align="center">WEAPONIZED TECHNOLOGY</h3>
 <div align="center">
-<a href="#" target="_blank"><img src="https://readme-components.vercel.app/api?component=experience&company=LANGUAGES&role=JavaScript%20%7C%20TypeScript%20%7C%20Python&duration=ADVANCED&location=Batcave&fill=black"></a>
-<a href="#" target="_blank"><img src="https://readme-components.vercel.app/api?component=experience&company=FRAMEWORKS&role=React%20%7C%20Node%20%7C%20Express&duration=EXPERT&location=Wayne%20Tower&fill=black"></a>
-<a href="#" target="_blank"><img src="https://readme-components.vercel.app/api?component=experience&company=TOOLS&role=Git%20%7C%20Docker%20%7C%20AWS&duration=MASTERED&location=Gotham%20City&fill=black"></a>
+<sub>MISSION PROFILE: Core capabilities deployed across Gotham's digital infrastructure.</sub>
 </div>
-</td>
 
-<td width="50%">
-<h3 align="center">LATEST MISSIONS</h3>
+### 🧠 Programming Languages
+`Python` · `C` · `C++` · `JavaScript (ES6+)` · `TypeScript` · `Solidity (basic smart contracts)`
+
+### 🕸️ Web Development
+**Frontend:** React.js · Vite · HTML5 · CSS3 · Tailwind CSS *(selectively)*  
+**Backend:** Node.js · Express.js · Flask  
+**API:** REST APIs · basic WebSockets  
+**Databases:** MySQL · MongoDB · PostgreSQL
+
+### ⛓️ Blockchain & Web3
+Ethereum · Solana · Aptos · OKX ecosystem · Solidity (contracts) · Wallet / RPC basics
+
+### 🤖 AI, Vision & Intelligence
+OpenAI API (ChatGPT / GPT integrations) · Computer Vision (OpenCV) · OCR (Tesseract.js) · PDF.js text extraction · QR code detection / processing
+
+### 🛰️ Embedded Systems & Robotics
+Arduino · ESP32 / ESP32-CAM · Raspberry Pi (Flask servers, video streaming, MAVLink gateways) · Pixhawk (MAVLink, UAV control) · Drone systems (prop design, competition tuning, AI autonomy, EWS concepts)
+
+### 🧰 Toolchain & Infrastructure
+Git · Docker · AWS · CI/CD fundamentals · Container orchestration basics · Monitoring & logs hygiene
+
+### 🗄️ Data Handling & Processing
+Structured + semi-structured parsing · Evidence/telemetry pipelines · Efficient binary + media handling
+
+### 🛡️ Security & Reliability (Foundations)
+Secure API patterns · Input validation · Basic cryptographic hygiene · Threat pattern awareness
+
+### 🦇 Highlighted Stack Badges
 <div align="center">
-<a href="#" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jonathanvineet&repo=batmobile-navigation-system&theme=dark&border_color=FFFF00&title_color=FFFF00&icon_color=FFFF00&text_color=FFFFFF"></a>
-<a href="#" target="_blank"><img src="https://github-readme-stats.vercel.app/api/pin/?username=jonathanvineet&repo=arkham-security-protocols&theme=dark&border_color=FFFF00&title_color=FFFF00&icon_color=FFFF00&text_color=FFFFFF"></a>
+  <img src="https://img.shields.io/badge/React-BAT_UI_MODULE-000000?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/TypeScript-BAT_SCRIPT-000000?style=flat&logo=typescript&logoColor=3178C6" />
+  <img src="https://img.shields.io/badge/Node.js-GOTHAM_CORE-000000?style=flat&logo=node.js&logoColor=5FA04E" />
+  <img src="https://img.shields.io/badge/Express-API_GRID-000000?style=flat&logo=express&logoColor=FFFFFF" />
+  <img src="https://img.shields.io/badge/Python-ANALYTICS_AI-000000?style=flat&logo=python&logoColor=3776AB" />
+  <img src="https://img.shields.io/badge/PostgreSQL-DATA_ARCHIVE-000000?style=flat&logo=postgresql&logoColor=4169E1" />
+  <img src="https://img.shields.io/badge/Docker-CONTAINER_VAULT-000000?style=flat&logo=docker&logoColor=2496ED" />
+  <img src="https://img.shields.io/badge/AWS-CLOUD_RELAY-000000?style=flat&logo=amazonaws&logoColor=FF9900" />
+  <img src="https://img.shields.io/badge/OpenCV-VISION_CORE-000000?style=flat&logo=opencv&logoColor=5C3EE8" />
+  <img src="https://img.shields.io/badge/OpenAI-LLM_INTEGRATIONS-000000?style=flat&logo=openai&logoColor=FFFFFF" />
 </div>
-</td>
-</tr>
-</table>
+
+### 🚧 In Progress / Expanding
+Deepening smart contract security · Scaling distributed telemetry · Advanced UAV autonomy models
+
+---
 
 <div align="center">
   <img src="https://github.com/rafaballerini/rafaballerini/blob/output/github-contribution-grid-snake-dark.svg" width="100%">
