@@ -14,37 +14,70 @@
   
 </div>
 
-<!-- BatTech Stack Badges -->
+<h2 align="center">Technology Stack 🦇</h2>
 <div align="center">
-  <table>
-    <tr>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/React-BAT%20MODULE-000000?style=for-the-badge&logo=react&logoColor=61DAFB&labelColor=111111" />
-      </td>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/TypeScript-BAT%20SCRIPT-000000?style=for-the-badge&logo=typescript&logoColor=3178C6&labelColor=111111" />
-      </td>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/Node.js-GOTHAM%20CORE-000000?style=for-the-badge&logo=node.js&logoColor=5FA04E&labelColor=111111" />
-      </td>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/Express-API%20GRID-000000?style=for-the-badge&logo=express&logoColor=FFFFFF&labelColor=111111" />
-      </td>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/Docker-CONTAINER%20VAULT-000000?style=for-the-badge&logo=docker&logoColor=2496ED&labelColor=111111" />
-      </td>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/AWS-CLOUD%20RELAY-000000?style=for-the-badge&logo=amazonaws&logoColor=FF9900&labelColor=111111" />
-      </td>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/PostgreSQL-DATA%20ARCHIVE-000000?style=for-the-badge&logo=postgresql&logoColor=4169E1&labelColor=111111" />
-      </td>
-      <td align="center" style="border:none;">
-        <img src="https://img.shields.io/badge/Git-VERSION%20UTILITY-000000?style=for-the-badge&logo=git&logoColor=F05032&labelColor=111111" />
-      </td>
-    </tr>
-  </table>
+  
+  <!-- Core Languages -->
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white" />
+  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=flat&logo=javascript&logoColor=000" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solidity-363636?style=flat&logo=solidity&logoColor=white" />
   <br/>
+  
+  <!-- Frontend -->
+  <img src="https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=FFD62E" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/TailwindCSS-0EA5E9?style=flat&logo=tailwindcss&logoColor=white" />
+  
+  <br/>
+  <!-- Backend / API -->
+  <img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat&logo=node.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/Express.js-000000?style=flat&logo=express&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=flat&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/REST-02569B?style=flat&logo=activemq&logoColor=white" />
+  <img src="https://img.shields.io/badge/WebSockets-35495E?style=flat&logo=socket.io&logoColor=fff" />
+  
+  <br/>
+  <!-- Databases -->
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white" />
+  
+  <br/>
+  <!-- Blockchain / Web3 -->
+  <img src="https://img.shields.io/badge/Ethereum-3C3C3D?style=flat&logo=ethereum&logoColor=white" />
+  <img src="https://img.shields.io/badge/Solana-1E1F25?style=flat&logo=solana&logoColor=00FFAF" />
+  <img src="https://img.shields.io/badge/Aptos-000000?style=flat&logo=aptos&logoColor=white" />
+  <img src="https://img.shields.io/badge/OKX-E60012?style=flat&logo=okx&logoColor=white" />
+  
+  <br/>
+  <!-- AI / Vision -->
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white" />
+  <img src="https://img.shields.io/badge/Tesseract.js-000000?style=flat&logo=apple&logoColor=white" />
+  <img src="https://img.shields.io/badge/PDF.js-FF0000?style=flat&logo=adobeacrobatreader&logoColor=white" />
+  <img src="https://img.shields.io/badge/QR%20Processing-111111?style=flat&logo=buffer&logoColor=FFFF00" />
+  
+  <br/>
+  <!-- Embedded / Robotics -->
+  <img src="https://img.shields.io/badge/Arduino-00979D?style=flat&logo=arduino&logoColor=white" />
+  <img src="https://img.shields.io/badge/ESP32-000000?style=flat&logo=espressif&logoColor=white" />
+  <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat&logo=raspberrypi&logoColor=white" />
+  <img src="https://img.shields.io/badge/Pixhawk-3B3B3B?style=flat&logo=drone&logoColor=white" />
+  <img src="https://img.shields.io/badge/Drones-Aerial-333333?style=flat&logo=aircanada&logoColor=FFFF00" />
+  
+  <br/>
+  <!-- Tooling / Infra -->
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonaws&logoColor=FF9900" />
+  <img src="https://img.shields.io/badge/CI%2FCD-111111?style=flat&logo=githubactions&logoColor=2088FF" />
+  <img src="https://img.shields.io/badge/Monitoring-0F0F0F?style=flat&logo=prometheus&logoColor=E6522C" />
+  
 </div>
 
 <div align="center">
@@ -109,19 +142,6 @@ Structured + semi-structured parsing · Evidence/telemetry pipelines · Efficien
 ### 🛡️ Security & Reliability (Foundations)
 Secure API patterns · Input validation · Basic cryptographic hygiene · Threat pattern awareness
 
-### 🦇 Highlighted Stack Badges
-<div align="center">
-  <img src="https://img.shields.io/badge/React-BAT_UI_MODULE-000000?style=flat&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/TypeScript-BAT_SCRIPT-000000?style=flat&logo=typescript&logoColor=3178C6" />
-  <img src="https://img.shields.io/badge/Node.js-GOTHAM_CORE-000000?style=flat&logo=node.js&logoColor=5FA04E" />
-  <img src="https://img.shields.io/badge/Express-API_GRID-000000?style=flat&logo=express&logoColor=FFFFFF" />
-  <img src="https://img.shields.io/badge/Python-ANALYTICS_AI-000000?style=flat&logo=python&logoColor=3776AB" />
-  <img src="https://img.shields.io/badge/PostgreSQL-DATA_ARCHIVE-000000?style=flat&logo=postgresql&logoColor=4169E1" />
-  <img src="https://img.shields.io/badge/Docker-CONTAINER_VAULT-000000?style=flat&logo=docker&logoColor=2496ED" />
-  <img src="https://img.shields.io/badge/AWS-CLOUD_RELAY-000000?style=flat&logo=amazonaws&logoColor=FF9900" />
-  <img src="https://img.shields.io/badge/OpenCV-VISION_CORE-000000?style=flat&logo=opencv&logoColor=5C3EE8" />
-  <img src="https://img.shields.io/badge/OpenAI-LLM_INTEGRATIONS-000000?style=flat&logo=openai&logoColor=FFFFFF" />
-</div>
 
 ### 🚧 In Progress / Expanding
 Deepening smart contract security · Scaling distributed telemetry · Advanced UAV autonomy models
