@@ -10,7 +10,7 @@
   
   ![](https://dcbadge.vercel.app/api/shield/Batman)
   [![GitHub followers](https://img.shields.io/github/followers/jonathanvineet?style=for-the-badge&logo=github&color=FFFF00&labelColor=000000)](https://github.com/jonathanvineet)
-  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=FFFF00)](https://linkedin.com/in/jonathanvineet)
+  [![LinkedIn](https://img.shields.io/badge/-LinkedIn-000000?style=for-the-badge&logo=linkedin&logoColor=FFFF00)](https://www.linkedin.com/in/vineet-jonathan-15a208292/)
   
 </div>
 
@@ -39,11 +39,12 @@ __|_____|____________________________________________________|_____|
 </div>
 
 <!-- Centered Batman logo image before Bat Arsenal (baked glow) -->
-
+<div align="center">
+  <img src="assets/bat-logo-glow-mask.png" alt="Bat Logo" width="420" />
+</div>
 
 <div align="center">
   <h2 style="display: inline-block; vertical-align: middle; margin: 0;">Bat Arsenal</h2>
-  <img src="assets/bat-logo-glow-mask.png" alt="Bat Logo" width="60" style="vertical-align: middle; margin-left: 15px;" />
 </div>
 <div align="center">
   
@@ -137,15 +138,19 @@ __|_____|____________________________________________________|_____|
 
 <div align="center">
   <p>Commissioner Gordon knows how to reach me. So can you.</p>
-  <a href="mailto:your-email@example.com">
-    <img src="https://img.shields.io/badge/ACTIVATE_BAT_SIGNAL-000000?style=for-the-badge&logo=gmail&logoColor=FFFF00">
+  
+  <a href="mailto:cvineetjonathan@gmail.com">
+    <img src="https://img.shields.io/badge/EMAIL-000000?style=for-the-badge&logo=gmail&logoColor=FFFF00&label=ACTIVATE_BAT_SIGNAL">
   </a>
+  
+  <a href="https://www.linkedin.com/in/vineet-jonathan-15a208292/">
+    <img src="https://img.shields.io/badge/LINKEDIN-000000?style=for-the-badge&logo=linkedin&logoColor=FFFF00&label=PROFESSIONAL_NETWORK">
+  </a>
+  
+  <img src="https://img.shields.io/badge/DISCORD-000000?style=for-the-badge&logo=discord&logoColor=FFFF00&label=jonathan_vineet">
+  
 </div>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" width="100%">
 </div>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=000000&height=100&section=footer&text=I%20AM%20VENGEANCE&fontSize=24&fontColor=FFFF00&animation=twinkling">
-</p>
