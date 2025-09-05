@@ -15,7 +15,27 @@
 </div>
 
 <div align="center">
-  <img src="https://i.imgur.com/CGgUCO2.gif" width="100%">
+  <pre style="background-color: #000; color: #FFFF00; padding: 20px; text-align: left; border-radius: 10px; font-family: 'Courier New', monospace;">
+<span style="color: #FFFF00;">BATCOMPUTER v7.89.34</span>
+██████╗  █████╗ ████████╗ ██████╗ ███████╗
+██╔══██╗██╔══██╗╚══██╔══╝██╔════╝ ██╔════╝
+██████╔╝███████║   ██║   ██║  ███╗███████╗
+██╔══██╗██╔══██║   ██║   ██║   ██║╚════██║
+██████╔╝██║  ██║   ██║   ╚██████╔╝███████║
+╚═════╝ ╚═╝  ╚═╝   ╚═╝    ╚═════╝ ╚══════╝
+
+> <span style="color: #00FF00;">INITIALIZING SYSTEMS...</span>
+> <span style="color: #00FF00;">LOADING KERNEL...</span> <span style="color: #FFF;">DONE</span>
+> <span style="color: #00FF00;">CHECKING HARDWARE INTEGRITY...</span> <span style="color: #FFF;">DONE</span>
+> <span style="color: #00FF00;">LOADING SECURITY PROTOCOLS...</span> <span style="color: #FFF;">DONE</span>
+> <span style="color: #00FF00;">INITIALIZING NEURAL NETWORKS...</span> <span style="color: #FFF;">DONE</span>
+> <span style="color: #00FF00;">MOUNTING ENCRYPTED FILESYSTEMS...</span> <span style="color: #FFF;">DONE</span>
+> <span style="color: #00FF00;">ESTABLISHING SATELLITE UPLINKS...</span> <span style="color: #FFF;">DONE</span>
+> <span style="color: #00FF00;">CONNECTING TO WAYNE ENTERPRISES SERVERS...</span> <span style="color: #FFF;">DONE</span>
+> <span style="color: #FFFF00;">WELCOME BACK, MASTER WAYNE</span>
+> <span style="color: #FF0000;">ALERT: GOTHAM CRIMINAL DATABASE UPDATED</span>
+> <span style="color: #FFFF00;">BATCOMPUTER READY FOR OPERATION</span>
+  </pre>
 </div>
 
 <h2 align="center">
