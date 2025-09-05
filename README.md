@@ -14,7 +14,32 @@
   
 </div>
 
-<h2 align="center">Bat Arsenal 🦇</h2>
+<h2 align="center">
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" width="25" height="25" /> 
+  BATCOMPUTER SYSTEMS ONLINE
+</h2>
+
+<!-- Batman City Skyline (moved up) -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnderMendoza/AnderMendoza/main/assets/line-neon.gif">
+</p>
+
+```
+        __                                                   __
+       ( _)                                                 (_  )
+  _|___|_    IDENTITY: Jonathan Vineet                    ___|___|_
+ (_______) ALIAS: The Dark Knight of Code               (_________)
+  |     |  LOCATION: The Batcave                          |     |
+  |     |        STATUS: Defending Gotham's Code          |     |
+__|_____|____________________________________________________|_____|
+```
+
+<!-- Centered Batman logo image before Bat Arsenal -->
+<div align="center">
+  <img src="https://fabrikbrands.com/wp-content/uploads/Batman-Logo-Evolution-21-1200x750.png" alt="Bat Logo" width="420" />
+</div>
+
+<h2 align="center">Bat Arsenal <img src="https://fabrikbrands.com/wp-content/uploads/Batman-Logo-Evolution-21-1200x750.png" alt="Bat Logo" width="38" style="vertical-align:middle;"/></h2>
 <div align="center">
   
   <!-- Core Languages -->
@@ -83,27 +108,6 @@
 <div align="center">
   <img src="https://i.pinimg.com/originals/04/b5/71/04b5711d4299553b6a5cf9ce0eb25888.gif" alt="Bat emblem" width="260" />
 </div>
-
-<h2 align="center">
-  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Light%20Bulb.png" width="25" height="25" /> 
-  BATCOMPUTER SYSTEMS ONLINE
-</h2>
-
-<!-- Batman City Skyline -->
-<p align="center">
-  <img src="https://raw.githubusercontent.com/AnderMendoza/AnderMendoza/main/assets/line-neon.gif">
-</p>
-
-```
-     🦇                                         🦇                 🦇
-        __                                                   __
-       ( _)                                                 (_  )
-  _|___|_    IDENTITY: Jonathan Vineet                    ___|___|_
- (_______) ALIAS: The Dark Knight of Code               (_________)
-  |     |  LOCATION: The Batcave                          |     |
-  |     |        STATUS: Defending Gotham's Code          |     |
-__|_____|____________________________________________________|_____|__
-```
 
 
 <div align="center">
