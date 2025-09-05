@@ -34,12 +34,12 @@
 __|_____|____________________________________________________|_____|
 ```
 
-<!-- Centered Batman logo image before Bat Arsenal with yellow glow (preserves original black) -->
+<!-- Centered Batman logo image before Bat Arsenal (baked glow) -->
 <div align="center">
-  <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="420" style="filter: drop-shadow(0 0 4px #FFD400) drop-shadow(0 0 12px #FFD400) drop-shadow(0 0 24px #FFC800);" />
+  <img src="assets/bat-logo-glow.png" alt="Bat Logo" width="420" />
 </div>
 
-<h2 align="center">Bat Arsenal <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="60" style="vertical-align:middle; filter: drop-shadow(0 0 2px #FFD400) drop-shadow(0 0 6px #FFD400) drop-shadow(0 0 10px #FFC800);"/></h2>
+<h2 align="center">Bat Arsenal <img src="assets/bat-logo-glow.png" alt="Bat Logo" width="60" style="vertical-align:middle;"/></h2>
 <div align="center">
   
   <!-- Core Languages -->
