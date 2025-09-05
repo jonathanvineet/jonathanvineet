@@ -34,12 +34,12 @@
 __|_____|____________________________________________________|_____|
 ```
 
-<!-- Centered Batman logo image before Bat Arsenal (transparent) -->
+<!-- Centered Batman logo image before Bat Arsenal (provided PNG) -->
 <div align="center">
-  <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 256'><path fill='%23FFFF00' d='M256 0C167 0 96 57 96 128s71 128 160 128 160-57 160-128S345 0 256 0zm0 32c52 0 96 43 96 96s-44 96-96 96-96-43-96-96 44-96 96-96zm-48 48c-9 0-16 7-16 16 0 6 3 11 8 14-2 4-4 9-4 14 0 18 14 32 32 32 8 0 15-3 21-8 6 5 13 8 21 8 18 0 32-14 32-32 0-5-2-10-4-14 5-3 8-8 8-14 0-9-7-16-16-16-6 0-11 3-14 8-4-2-9-4-14-4s-10 2-14 4c-3-5-8-8-14-8z'/></svg>" alt="Bat Logo" width="420" />
+  <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="420" />
 </div>
 
-<h2 align="center">Bat Arsenal <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 256'><path fill='%23FFFF00' d='M256 0C167 0 96 57 96 128s71 128 160 128 160-57 160-128S345 0 256 0zm0 32c52 0 96 43 96 96s-44 96-96 96-96-43-96-96 44-96 96-96zm-48 48c-9 0-16 7-16 16 0 6 3 11 8 14-2 4-4 9-4 14 0 18 14 32 32 32 8 0 15-3 21-8 6 5 13 8 21 8 18 0 32-14 32-32 0-5-2-10-4-14 5-3 8-8 8-14 0-9-7-16-16-16-6 0-11 3-14 8-4-2-9-4-14-4s-10 2-14 4c-3-5-8-8-14-8z'/></svg>" alt="Bat Logo" width="38" style="vertical-align:middle;"/></h2>
+<h2 align="center">Bat Arsenal <img src="https://www.hatchwise.com/wp-content/uploads/2024/03/image-29.png" alt="Bat Logo" width="60" style="vertical-align:middle;"/></h2>
 <div align="center">
   
   <!-- Core Languages -->
