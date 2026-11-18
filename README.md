@@ -179,6 +179,10 @@
   <img src="https://user-images.githubusercontent.com/74038190/212284115-f47cd8ff-2ffb-4b04-b5bf-4d1c14c0247f.gif" width="100%" alt="" />
 </div>
 
+<p align="center">
+  <img src="https://i.pinimg.com/originals/04/b5/71/04b5711d4299553b6a5cf9ce0eb25888.gif" width="520" alt="The Bat-Signal over Gotham" />
+</p>
+
 <h2 align="center">📡 ACTIVATE THE BAT SIGNAL</h2>
 
 <p align="center"><i>Commissioner Gordon knows how to reach me. So can you.</i></p>
@@ -190,5 +194,5 @@
 </p>
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=FFFF00&height=110&section=footer&text=I%20AM%20VENGEANCE&fontSize=26&fontColor=000000&fontAlignY=70" alt="I am vengeance" />
+  <img src="assets/footer.svg" width="100%" alt="I am vengeance" />
 </p>

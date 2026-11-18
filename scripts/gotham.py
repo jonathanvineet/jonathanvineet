@@ -86,16 +86,46 @@ def weeks_of(days):
     return weeks
 
 
-# A generic bat silhouette, 100 x 50.
-BAT = ("M50 14 L53 5 L55 13 C62 11 71 8 80 10 C76 15 78 21 85 22 C92 22 97 19 100 15 "
-       "C99 30 89 41 74 40 C70 36 64 36 60 42 C56 40 52 44 50 50 C48 44 44 40 40 42 "
-       "C36 36 30 36 26 40 C11 41 1 30 0 15 C3 19 8 22 15 22 C22 21 24 15 20 10 "
-       "C29 8 38 11 45 13 L47 5 Z")
+# A generic bat silhouette: the right half is drawn, the left half is its mirror.
+# Centered on (0, 0), about 120 x 56.
+_HALF = [
+    ("L", (2.6, -8)), ("L", (5.2, -21)), ("L", (7.4, -6)),
+    ("C", (15, -12), (27, -22), (40, -22)), ("C", (48, -22), (55, -17), (60, -9)),
+    ("C", (54, -9), (50.5, -5), (49, 5)), ("C", (44.5, -1), (38.5, 0), (36, 11)),
+    ("C", (31, 5), (25, 7), (23, 17)), ("C", (17, 15), (8.5, 19), (0, 33)),
+]
+
+
+def _bat_path():
+    f = lambda p: f"{p[0]:g} {p[1]:g}"
+    m = lambda p: (-p[0], p[1])
+    start, d, cur, segs = (0, -7), ["M0 -7"], (0, -7), []
+    for seg in _HALF:
+        d.append(seg[0] + " " + " ".join(f(p) for p in seg[1:]))
+        segs.append((cur, seg))
+        cur = seg[-1]
+    for begin, seg in reversed(segs):
+        if seg[0] == "L":
+            d.append("L " + f(m(begin)))
+        else:
+            d.append("C " + " ".join(f(m(p)) for p in (seg[2], seg[1], begin)))
+    return " ".join(d) + " Z"
+
+
+BAT = _bat_path()
+
+
+def _tangents(px, py, cx, cy, a, b):
+    """Points where lines from (px, py) touch the ellipse centred on (cx, cy)."""
+    ux, uy = (px - cx) / a, (py - cy) / b
+    d = math.hypot(ux, uy)
+    t0, al = math.atan2(uy, ux), math.acos(min(1, 1 / d))
+    return [(cx + a * math.cos(t0 + s * al), cy + b * math.sin(t0 + s * al)) for s in (1, -1)]
 
 
 def skyline(days, total, best_day, cur_streak):
     weeks = weeks_of(days)
-    W, H, ground = 960, 420, 360
+    W, H, ground = 960, 440, 380
     bw, gap = 14, 3
     x0 = (W - len(weeks) * (bw + gap) + gap) / 2
     sums = [sum(c for _, c in w) for w in weeks]
@@ -108,7 +138,7 @@ def skyline(days, total, best_day, cur_streak):
     tops = []
     for i, (w, s) in enumerate(zip(weeks, sums)):
         x = x0 + i * (bw + gap)
-        h = 18 + 190 * math.sqrt(s / peak)
+        h = 18 + 165 * math.sqrt(s / peak)
         h += rnd.uniform(-4, 4) if s else 0
         y = ground - h
         tops.append((x, y))
@@ -147,26 +177,35 @@ def skyline(days, total, best_day, cur_streak):
                    f'<animate attributeName="opacity" values="1;0.1;1" dur="{rnd.uniform(1.6, 2.6):.1f}s" repeatCount="indefinite"/></circle>')
     antennas = "".join(ant)
 
-    # the Bat-Signal, from the busiest week
-    sx, sy = tops[busiest][0] + bw / 2, tops[busiest][1] - 2
-    tx = min(max(sx + (110 if sx < W / 2 else -110), 470), W - 200)
-    ty = 78
-    ang = math.degrees(math.atan2(ty - sy, tx - sx)) + 90
-    dist = math.hypot(tx - sx, ty - sy)
+    # the Bat-Signal: a searchlight on the busiest week's roof, the emblem on the clouds
+    sx, sy = tops[busiest][0] + bw / 2, tops[busiest][1] - 5
+    tc = sx + 130 if sx < W / 2 else sx - 130
+    tc = min(max(tc, 430), 700)
+    ty, a, b, amp, n = 100, 70, 34, 36, 24
+    xs = [tc + amp * math.sin(2 * math.pi * k / n) for k in range(n + 1)]
+    ys = [ty + 6 * math.sin(4 * math.pi * k / n) for k in range(n + 1)]
+    beam_vals = []
+    for x, y in zip(xs, ys):
+        (p1, p2) = _tangents(sx, sy, x, y, a, b)
+        beam_vals.append(f"{sx:.1f},{sy:.1f} {p1[0]:.1f},{p1[1]:.1f} {p2[0]:.1f},{p2[1]:.1f}")
+    anim = 'dur="16s" repeatCount="indefinite"'
+    cxs = ";".join(f"{x:.1f}" for x in xs)
+    cys = ";".join(f"{y:.1f}" for y in ys)
+    moves = ";".join(f"{x:.1f} {y:.1f}" for x, y in zip(xs, ys))
     signal = f'''
 <g opacity="0">
-  <animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="1.2s" fill="freeze"/>
-  <g transform="translate({sx:.1f} {sy:.1f}) rotate({ang:.1f})">
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="-7;7;-7" dur="14s" repeatCount="indefinite" calcMode="spline" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
-      <polygon points="-3,0 3,0 70,{-dist:.1f} -70,{-dist:.1f}" fill="url(#beam)"/>
-      <g transform="translate(0 {-dist:.1f}) rotate({-ang:.1f})">
-        <ellipse rx="78" ry="38" fill="url(#disc)"/>
-        <path d="{BAT}" transform="translate(-40 -21) scale(0.8 0.84)" fill="#0a0a0d" opacity="0.92"/>
-      </g>
-    </g>
+  <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="1.4s" fill="freeze"/>
+  <polygon points="{beam_vals[0]}" fill="url(#beam)" filter="url(#edge)"><animate attributeName="points" values="{";".join(beam_vals)}" {anim}/></polygon>
+  <ellipse rx="{a * 1.9}" ry="{b * 1.9}" fill="#fff3a0" opacity="0.10" filter="url(#soft)"><animate attributeName="cx" values="{cxs}" {anim}/><animate attributeName="cy" values="{cys}" {anim}/></ellipse>
+  <ellipse rx="{a}" ry="{b}" fill="url(#disc)" filter="url(#edge)"><animate attributeName="cx" values="{cxs}" {anim}/><animate attributeName="cy" values="{cys}" {anim}/></ellipse>
+  <g><animateTransform attributeName="transform" type="translate" values="{moves}" {anim}/>
+    <path d="{BAT}" transform="scale(0.98 0.96)" fill="#0d0c08" opacity="0.88"/>
   </g>
-  <circle cx="{sx:.1f}" cy="{sy:.1f}" r="3.5" fill="#fff6b0"/>
+</g>
+<g>
+  <rect x="{sx - 6:.1f}" y="{sy + 1:.1f}" width="12" height="4" rx="1" fill="#24242a"/>
+  <circle cx="{sx:.1f}" cy="{sy:.1f}" r="4.5" fill="#2f2f36"/>
+  <circle cx="{sx:.1f}" cy="{sy:.1f}" r="3" fill="#fff8c8" opacity="0"><animate attributeName="opacity" from="0" to="1" begin="2.2s" dur="0.3s" fill="freeze"/></circle>
 </g>'''
 
     # stars
@@ -188,8 +227,9 @@ def skyline(days, total, best_day, cur_streak):
 <defs>
   <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050507"/><stop offset="0.7" stop-color="#121218"/><stop offset="1" stop-color="#1c1a14"/></linearGradient>
   <linearGradient id="bld" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#16161b"/><stop offset="1" stop-color="#0b0b0e"/></linearGradient>
-  <linearGradient id="beam" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff3a0" stop-opacity="0.55"/><stop offset="1" stop-color="#fff3a0" stop-opacity="0.04"/></linearGradient>
-  <radialGradient id="disc"><stop offset="0" stop-color="#fff6b8" stop-opacity="0.95"/><stop offset="0.75" stop-color="{YELLOW}" stop-opacity="0.6"/><stop offset="1" stop-color="{YELLOW}" stop-opacity="0"/></radialGradient>
+  <linearGradient id="beam" gradientUnits="userSpaceOnUse" x1="{sx:.1f}" y1="{sy:.1f}" x2="{tc:.1f}" y2="{ty}"><stop offset="0" stop-color="#fff6c0" stop-opacity="0.75"/><stop offset="0.6" stop-color="#fff3a0" stop-opacity="0.22"/><stop offset="1" stop-color="#fff3a0" stop-opacity="0.12"/></linearGradient>
+  <radialGradient id="disc"><stop offset="0" stop-color="#fffbe0"/><stop offset="0.8" stop-color="#fbe98a"/><stop offset="1" stop-color="#e9cf45"/></radialGradient>
+  <filter id="edge" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="1.6"/></filter>
   <radialGradient id="moon"><stop offset="0" stop-color="#f4f1e6"/><stop offset="1" stop-color="#cfcab8"/></radialGradient>
   <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
 </defs>
@@ -266,12 +306,40 @@ def terminal(total, cur_streak, repo, pushed):
 <rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" fill="#0a0a0c" stroke="#2a2a2f"/>
 <path d="M0.5 36 V10.5 a10 10 0 0 1 10 -10 H{W - 10.5} a10 10 0 0 1 10 10 V36 Z" fill="#121216"/>
 <line x1="0" y1="36" x2="{W}" y2="36" stroke="#2a2a2f"/>
-<path d="{BAT}" transform="translate(20 11) scale(0.28)" fill="{YELLOW}"/>
+<path d="{BAT}" transform="translate(34 18) scale(0.22)" fill="{YELLOW}"/>
 <text x="{W / 2}" y="22" text-anchor="middle" class="bar">BATCOMPUTER · WAYNE ENTERPRISES R&amp;D</text>
 <circle cx="{W - 24}" cy="18" r="4" fill="#5fd38d"><animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/></circle>
 {"".join(body)}
 {cursor}
 <rect x="0" y="37" width="{W}" height="{H - 38}" fill="url(#scan)"/>
+</svg>
+'''
+
+
+def footer():
+    W, H = 960, 190
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" aria-label="I am vengeance">
+<defs>
+  <linearGradient id="fl" x1="1" x2="0"><stop offset="0" stop-color="{YELLOW}"/><stop offset="1" stop-color="{YELLOW}" stop-opacity="0"/></linearGradient>
+  <linearGradient id="fr" x1="0" x2="1"><stop offset="0" stop-color="{YELLOW}"/><stop offset="1" stop-color="{YELLOW}" stop-opacity="0"/></linearGradient>
+  <radialGradient id="glow"><stop offset="0" stop-color="{YELLOW}" stop-opacity="0.22"/><stop offset="1" stop-color="{YELLOW}" stop-opacity="0"/></radialGradient>
+</defs>
+<style>
+  .big{{font:800 40px 'Arial Black','Helvetica Neue',Helvetica,Arial,sans-serif;fill:#f2f2f2;letter-spacing:16px}}
+  .sub{{font:500 11px {MONO};fill:#76767e;letter-spacing:5px}}
+</style>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{H - 1}" rx="10" fill="#0a0a0c" stroke="#2a2a2f"/>
+<ellipse cx="{W / 2}" cy="48" rx="120" ry="40" fill="url(#glow)"/>
+<g transform="translate({W / 2} 46) scale(0.42)"><path d="{BAT}" fill="{YELLOW}"/></g>
+<rect x="{W / 2 - 50}" y="45" height="1.5" width="0" fill="url(#fl)">
+  <animate attributeName="x" from="{W / 2 - 50}" to="{W / 2 - 380}" begin="0.3s" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1"/>
+  <animate attributeName="width" from="0" to="330" begin="0.3s" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1"/></rect>
+<rect x="{W / 2 + 50}" y="45" height="1.5" width="0" fill="url(#fr)">
+  <animate attributeName="width" from="0" to="330" begin="0.3s" dur="1.2s" fill="freeze" calcMode="spline" keySplines="0.2 0.7 0.3 1"/></rect>
+<text x="{W / 2 + 8}" y="118" text-anchor="middle" class="big" opacity="0">I AM VENGEANCE
+  <animate attributeName="opacity" from="0" to="1" begin="0.9s" dur="1.4s" fill="freeze"/></text>
+<text x="{W / 2 + 2}" y="156" text-anchor="middle" class="sub" opacity="0">SIGNING OFF FROM THE BATCAVE
+  <animate attributeName="opacity" from="0" to="1" begin="1.8s" dur="1.2s" fill="freeze"/></text>
 </svg>
 '''
 
@@ -284,6 +352,7 @@ def main():
     repo, pushed = latest_repo()
     (ASSETS / "gotham-skyline.svg").write_text(skyline(days, total, best, s))
     (ASSETS / "batcomputer.svg").write_text(terminal(total, s, repo, pushed))
+    (ASSETS / "footer.svg").write_text(footer())
     print(f"{total} contributions, streak {s}, busiest {best}, last repo {repo}")
 
 
