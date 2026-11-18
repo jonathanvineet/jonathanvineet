@@ -86,33 +86,23 @@ def weeks_of(days):
     return weeks
 
 
-# A generic bat silhouette: the right half is drawn, the left half is its mirror.
-# Centered on (0, 0), about 120 x 56.
-_HALF = [
-    ("L", (2.6, -8)), ("L", (5.2, -21)), ("L", (7.4, -6)),
-    ("C", (15, -12), (27, -22), (40, -22)), ("C", (48, -22), (55, -17), (60, -9)),
-    ("C", (54, -9), (50.5, -5), (49, 5)), ("C", (44.5, -1), (38.5, 0), (36, 11)),
-    ("C", (31, 5), (25, 7), (23, 17)), ("C", (17, 15), (8.5, 19), (0, 33)),
-]
-
-
-def _bat_path():
-    f = lambda p: f"{p[0]:g} {p[1]:g}"
-    m = lambda p: (-p[0], p[1])
-    start, d, cur, segs = (0, -7), ["M0 -7"], (0, -7), []
-    for seg in _HALF:
-        d.append(seg[0] + " " + " ".join(f(p) for p in seg[1:]))
-        segs.append((cur, seg))
-        cur = seg[-1]
-    for begin, seg in reversed(segs):
-        if seg[0] == "L":
-            d.append("L " + f(m(begin)))
-        else:
-            d.append("C " + " ".join(f(m(p)) for p in (seg[2], seg[1], begin)))
-    return " ".join(d) + " Z"
-
-
-BAT = _bat_path()
+# The bat emblem, traced from assets/bat-alpha.png. Centred on (0, 0), 120 x 52.
+BAT = (
+    "M-60.0 3.1 L-59.5 3.1 L-57.6 2.6 L-53.1 2.1 L-52.9 1.9 L-48.1 1.8 L-47.9 1.6 L-47.4 1.8 L-47.2 1.6 "
+    "L-47.0 1.8 L-44.3 1.8 L-44.2 1.9 L-42.0 2.1 L-38.3 3.1 L-35.4 4.6 L-32.9 7.0 L-31.6 9.2 L-30.9 11.5 "
+    "L-30.9 12.7 L-27.9 11.2 L-23.8 10.2 L-19.8 10.2 L-15.9 11.2 L-11.0 13.7 L-7.8 16.2 L-3.5 20.8 L-1.3 "
+    "23.6 L0.1 25.8 L1.1 24.0 L3.8 20.1 L5.3 18.3 L8.3 15.2 L11.9 12.5 L15.2 10.9 L19.1 9.8 L20.4 9.8 "
+    "L20.6 9.7 L24.2 9.8 L28.4 11.0 L32.1 13.0 L32.2 9.8 L32.7 8.3 L33.9 6.3 L36.1 4.3 L39.1 2.8 L42.5 "
+    "1.9 L45.4 1.8 L45.5 1.6 L52.1 1.8 L52.3 1.9 L57.0 2.4 L59.8 3.1 L59.8 2.3 L59.2 -0.3 L59.2 -0.9 "
+    "L57.8 -4.6 L57.1 -5.6 L57.0 -6.3 L53.8 -11.0 L50.4 -14.6 L46.9 -17.4 L40.6 -21.3 L35.3 -23.8 L29.5 "
+    "-25.8 L28.7 -26.0 L30.2 -23.8 L30.2 -23.5 L31.2 -21.6 L31.7 -19.9 L31.7 -17.1 L30.5 -14.6 L28.5 "
+    "-12.5 L26.0 -11.0 L22.5 -9.7 L19.1 -8.8 L18.3 -8.8 L15.1 -8.2 L7.8 -7.7 L7.5 -8.3 L7.3 -10.2 L5.3 "
+    "-20.1 L2.8 -13.4 L-1.9 -13.4 L-3.3 -16.4 L-4.5 -19.8 L-4.8 -20.1 L-5.3 -16.7 L-6.6 -10.7 L-6.6 -9.8 "
+    "L-7.3 -7.7 L-7.5 -7.8 L-9.0 -7.8 L-9.2 -8.0 L-11.9 -8.2 L-12.0 -8.3 L-16.1 -8.8 L-21.3 -10.0 L-25.2 "
+    "-11.4 L-27.9 -12.7 L-29.0 -13.5 L-30.5 -15.1 L-31.4 -16.6 L-31.7 -18.1 L-31.6 -19.6 L-30.2 -22.5 "
+    "L-28.7 -24.3 L-26.8 -26.0 L-30.9 -25.0 L-37.3 -22.6 L-43.0 -19.6 L-45.5 -17.9 L-48.1 -15.9 L-52.4 "
+    "-11.5 L-56.0 -6.6 L-58.3 -2.1 Z "
+).strip()
 
 
 def _tangents(px, py, cx, cy, a, b):
@@ -199,7 +189,7 @@ def skyline(days, total, best_day, cur_streak):
   <ellipse rx="{a * 1.9}" ry="{b * 1.9}" fill="#fff3a0" opacity="0.10" filter="url(#soft)"><animate attributeName="cx" values="{cxs}" {anim}/><animate attributeName="cy" values="{cys}" {anim}/></ellipse>
   <ellipse rx="{a}" ry="{b}" fill="url(#disc)" filter="url(#edge)"><animate attributeName="cx" values="{cxs}" {anim}/><animate attributeName="cy" values="{cys}" {anim}/></ellipse>
   <g><animateTransform attributeName="transform" type="translate" values="{moves}" {anim}/>
-    <path d="{BAT}" transform="scale(0.98 0.96)" fill="#0d0c08" opacity="0.88"/>
+    <path d="{BAT}" transform="scale(0.8)" fill="#0d0c08" opacity="0.9"/>
   </g>
 </g>
 <g>
