@@ -21,19 +21,9 @@
   BATCOMPUTER SYSTEMS ONLINE
 </h2>
 
-<div align="center">
-
-```
-        __                                                   __
-       ( _)                                                 (_  )
-  _|___|_    IDENTITY: Jonathan Vineet                    ___|___|_
- (_______) ALIAS: The Dark Knight of Code               (_________)
-  |     |  LOCATION: The Batcave                          |     |
-  |     |        STATUS: Defending Gotham's Code          |     |
-__|_____|____________________________________________________|_____|
-```
-
-</div>
+<p align="center">
+  <img src="assets/batcomputer.svg" width="760" alt="Batcomputer: Jonathan Vineet, The Dark Knight of Code, operating from the Batcave" />
+</p>
 
 <table align="center">
   <tr>
@@ -169,15 +159,18 @@ __|_____|____________________________________________________|_____|
 
 ---
 
+<h2 align="center">🌃 GOTHAM, BUILT FROM MY COMMITS</h2>
+<p align="center"><i>Every week of the past year is a building. Every contribution lights a window. The Bat-Signal shines from my busiest week.<br/>Rebuilt every night by a GitHub Action.</i></p>
+
+<p align="center">
+  <img src="assets/gotham-skyline.svg" width="100%" alt="My contributions from the past year drawn as the Gotham skyline" />
+</p>
+
 <h2 align="center">📊 CRIMINAL DATABASE TRACKING</h2>
 
 <p align="center">
   <img height="170" src="https://github-readme-stats.vercel.app/api?username=jonathanvineet&show_icons=true&bg_color=0B0B0B&title_color=FFFF00&text_color=E6E6E6&icon_color=FFFF00&border_color=2A2A2A&include_all_commits=true&count_private=true&hide_border=false" alt="GitHub stats" />
   <img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=jonathanvineet&background=0B0B0B&border=2A2A2A&fire=FFFF00&currStreakNum=FFFFFF&ring=FFFF00&currStreakLabel=FFFF00&sideNums=FFFFFF&sideLabels=FFFF00&dates=A8A8A8" alt="GitHub streak" />
-</p>
-
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=jonathanvineet&bg_color=0B0B0B&color=E6E6E6&line=FFFF00&point=FFFFFF&area=true&area_color=FFFF00&hide_border=false&title_color=FFFF00&custom_title=Patrol%20Log" alt="Contribution activity" />
 </p>
 
 ---
